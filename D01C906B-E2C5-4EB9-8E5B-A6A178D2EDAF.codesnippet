@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>scrollView-xg</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UIScrollView *)customScrollView {
+    if (!_customScrollView) {
+        _customScrollView = ({
+            UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectZero];
+            scrollView.backgroundColor = [UIColor yellowColor];
+            scrollView.showsVerticalScrollIndicator = NO;
+            scrollView.showsHorizontalScrollIndicator = NO;
+            scrollView.delegate = self;
+            scrollView;
+        });
+    }
+    return _customScrollView;
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D01C906B-E2C5-4EB9-8E5B-A6A178D2EDAF</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>scrollView-xg</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

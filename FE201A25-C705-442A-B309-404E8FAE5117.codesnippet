@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>button-xg</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UIButton *)customButton {
+    if (!_customButton) {
+        _customButton = ({
+            UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+            button.backgroundColor = [UIColor redColor];
+            button.titleLabel.font = [UIFont systemFontOfSize:15];
+            [button setTitle:@"默认按钮名" forState:UIControlStateNormal];
+            [button setImage:[UIImage imageNamed:@"默认"] forState:UIControlStateNormal];
+            [button setImage:[UIImage imageNamed:@"选中"] forState:UIControlStateSelected];
+            [button addTarget:self action:@selector(customButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+            button;
+        });
+    }
+    return _customButton;
+}
+
+- (void)customButtonClick:(UIButton *)sender {
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>FE201A25-C705-442A-B309-404E8FAE5117</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>button-xg</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
